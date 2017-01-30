@@ -1,3 +1,4 @@
+import filters.MyLoggingFilter;
 import play.filters.csrf.CSRFFilter;
 import play.filters.headers.SecurityHeadersFilter;
 import play.filters.hosts.AllowedHostsFilter;
@@ -20,7 +21,9 @@ public class Filters extends DefaultHttpFilters {
     @Inject
     public Filters(CSRFFilter csrfFilter,
                    AllowedHostsFilter allowedHostsFilter,
-                   SecurityHeadersFilter securityHeadersFilter) {
-        super(csrfFilter, allowedHostsFilter, securityHeadersFilter);
+                   SecurityHeadersFilter securityHeadersFilter,
+                   MyLoggingFilter myLoggingFilter
+    ) {
+        super(csrfFilter, allowedHostsFilter, securityHeadersFilter, myLoggingFilter);
     }
 }

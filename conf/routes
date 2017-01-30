@@ -7,8 +7,6 @@ GET     /                           controllers.HomeController.index
 
 
 GET     /hello/:name                controllers.HelloController.hello(name, uppercase: Boolean ?= false)
-GET     /goodbye/:name              controllers.HelloController.goodbye(name, uppercase: Boolean ?= false)
-
 
 
 

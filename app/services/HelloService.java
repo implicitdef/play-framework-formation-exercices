@@ -1,6 +1,7 @@
 package services;
 
 import play.Configuration;
+import play.Logger;
 
 import javax.inject.Inject;
 
@@ -12,6 +13,7 @@ public class HelloService {
     @Inject
     public HelloService(Configuration conf) {
         this.conf = conf;
+        Logger.info("La valeur de hello.exclamationPoints est " + conf.getInt("hello.exclamationPoints"));
     }
 
     public String buildMessage(String name, Boolean uppercase){

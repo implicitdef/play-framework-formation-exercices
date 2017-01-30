@@ -8,9 +8,6 @@ GET     /                           controllers.HomeController.index
 
 GET     /hello/:name                controllers.HelloController.hello(name, uppercase: Boolean ?= false)
 
-GET     /store/:name                controllers.HelloController.storeName(name)
-GET     /hello                      controllers.HelloController.sayHelloToStoredName()
-
 
 
 

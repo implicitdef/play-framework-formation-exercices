@@ -1,0 +1,17 @@
+@(message: String, isBigTitle: Boolean)(divContent: Html)
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    @if(isBigTitle){
+      <h1>@message</h1>
+    } else {
+      <h3>@message</h3>
+    }
+    <div>
+      @divContent
+    </div>
+  </body>
+</html>

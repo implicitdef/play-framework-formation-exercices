@@ -1,13 +1,5 @@
 @(message: String)
 
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-    <h1>@message</h1>
-    <div>
-      <strong>Lorem</strong> ipsum dolor...
-    </div>
-  </body>
-</html>
+@layout(message, isBigTitle = true){
+  <strong>Lorem</strong> ipsum dolor...
+}

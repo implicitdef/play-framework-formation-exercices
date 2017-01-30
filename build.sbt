@@ -9,3 +9,4 @@ scalaVersion := "2.11.8"
 
 libraryDependencies += filters
 libraryDependencies += javaWs
+libraryDependencies += cache
